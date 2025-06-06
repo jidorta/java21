@@ -1,22 +1,27 @@
-# Proyecto Java 21 - Ejemplos CompletableFuture y Virtual Threads
+# Ejercicios con Novedades de Java 21
 
-Este proyecto contiene ejemplos prácticos de nuevas características en Java 21, incluyendo:
+Este repositorio contiene ejemplos prácticos de nuevas funcionalidades introducidas en Java 21, organizados por temática.
 
-- Uso de Virtual Threads.
-- Ejemplos de CompletableFuture con Executor y ejecución paralela.
+## Estructura del proyecto
 
-## Estructura
+- `virtualthreads/`  
+  Ejemplo de uso de hilos virtuales (`Thread.startVirtualThread()`).
 
-- `java21-virtual-threads/virtual_threads`  
-  Contiene ejemplos relacionados con Virtual Threads.
+- `completablefuture/`  
+  Uso de `CompletableFuture` con un `ExecutorService`.
 
-- `java21-virtual-threads/completablefuture`  
-  Contiene ejemplos relacionados con CompletableFuture.
+- `patternmatchingswitch/`  
+  Uso de interfaces `sealed` y `switch` con pattern matching.
 
-## Cómo compilar y ejecutar
+## Requisitos
 
-Desde la carpeta donde están los archivos `.java`, ejecuta:
+- Java 21 instalado
+- Maven (opcional, si usas Spring Boot o deseas compilar con `pom.xml`)
+
+## Cómo ejecutar
+
+Desde la raíz del proyecto:
 
 ```bash
-javac *.java
-java NombreDeLaClase
+mvn compile
+mvn exec:java -Dexec.mainClass="com.example.java21.virtualthreads.VirtualThreadsExample"
