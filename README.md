@@ -38,3 +38,13 @@ Este ejemplo muestra cómo utilizar `ScopedValue`, una novedad en Java 21 (en fa
 - Lo asocia con el valor `"Juan"` mediante `ScopedValue.where(...)`.
 - Ejecuta un bloque de código (`run`) en ese contexto.
 - Accede al valor desde diferentes métodos, sin necesidad de pasar argumentos.
+
+## 🧪 String Templates (preview feature - Java 21)
+
+```java
+String name = "Juan";
+int age = 30;
+
+String message = STR."My name is \{name} and I am \{age} years old.";
+
+System.out.println(message);
