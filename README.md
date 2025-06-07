@@ -12,6 +12,8 @@ Este repositorio contiene ejemplos prácticos de nuevas funcionalidades introduc
 
 - `patternmatchingswitch/`  
   Uso de interfaces `sealed` y `switch` con pattern matching.
+  
+-  'Scoped Values'
 
 ## Requisitos
 
