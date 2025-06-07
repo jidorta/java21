@@ -25,3 +25,14 @@ Desde la raíz del proyecto:
 ```bash
 mvn compile
 mvn exec:java -Dexec.mainClass="com.example.java21.virtualthreads.VirtualThreadsExample"
+
+# Scoped Values (Java 21 - Preview)
+
+Este ejemplo muestra cómo utilizar `ScopedValue`, una novedad en Java 21 (en fase preview), para pasar información a métodos sin usar parámetros ni variables de contexto como `ThreadLocal`.
+
+## 🧪 Qué hace
+
+- Define un `ScopedValue<String>` llamado `USERNAME`.
+- Lo asocia con el valor `"Juan"` mediante `ScopedValue.where(...)`.
+- Ejecuta un bloque de código (`run`) en ese contexto.
+- Accede al valor desde diferentes métodos, sin necesidad de pasar argumentos.
