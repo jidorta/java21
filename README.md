@@ -48,3 +48,9 @@ int age = 30;
 String message = STR."My name is \{name} and I am \{age} years old.";
 
 System.out.println(message);
+
+### ✅ `SequencedCollection` con List y LinkedHashSet
+Java 21 introduce una jerarquía para colecciones ordenadas que permite acceder al primer y último elemento, así como invertir el orden.
+
+- `List.getFirst()`, `getLast()` y `reversed()`
+- `LinkedHashSet.reversed()` mantiene orden de inserción inverso
