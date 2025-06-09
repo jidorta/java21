@@ -54,3 +54,9 @@ Java 21 introduce una jerarquía para colecciones ordenadas que permite acceder 
 
 - `List.getFirst()`, `getLast()` y `reversed()`
 - `LinkedHashSet.reversed()` mantiene orden de inserción inverso
+
+Java 21 permite invertir listas inmutables fácilmente:
+
+```java
+List<String> original = List.of("a", "b", "c");
+List<String> inversa = original.reversed();
